@@ -19,6 +19,7 @@ class Settings(BaseSettings):
 
     embedding_model: str
 
+    llm_max_tokens: int = 512
     llm_model: str
     llm_adapter_path: str | None = None
     llm_device: str = 'cpu'
